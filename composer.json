@@ -1,6 +1,6 @@
 {
   "name": "yinjiang/qqlogin",
-  "description": "qq login for web",
+  "description": "Qq login for web",
   "authors": [
     {
       "name": "Yinjiang",
@@ -11,7 +11,7 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "qqlogin\\qqlogin\\": "src/"
+      "Yinjiang\\Qqlogin\\": "src/"
     }
   }
 }

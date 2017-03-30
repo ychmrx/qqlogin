@@ -6,7 +6,7 @@
  * Time: 10:30
  */
 
-namespace Qqlogin\Qqlogin;
+namespace Yinjiang\Qqlogin;
 
 
 class Qqlogin
@@ -59,6 +59,7 @@ class Qqlogin
 
     public function getOpenId()
     {
+        $this->getAccessToken();
         $url = "https://graph.qq.com/oauth2.0/me?access_token={$this->access_token}";
         $result = self::getCurl($url);
         if ($result) {
@@ -73,14 +74,6 @@ class Qqlogin
             return false;
         }
     }
-
-    public function doLogin()
-    {
-        $this->getAccessToken();
-        $resutl = $this->getOpenId();
-        return $resutl;
-    }
-
 
     public static function getCurl($url)
     {
