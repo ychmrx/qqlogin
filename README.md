@@ -1,5 +1,4 @@
-# qqlogin
-qq login for laravel5
+QQ第三方登录
 
 安装
 composer require yinjiang/qqlogin
