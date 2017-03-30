@@ -37,11 +37,6 @@ class Qqlogin
         $this->access_token = $access_token;
     }
 
-    public function login($access)
-    {
-        $url = "https://graph.qq.com/user/get_user_info?oauth_consumer_key={$this->key}&access_token={$this->access_token}";
-    }
-
     public function getCode()
     {
         $url = "https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id={$this->key}&redirect_uri={$this->callback}&state={$this->state}";
